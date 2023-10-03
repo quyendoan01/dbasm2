@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7A57FE5-E458-4C82-B629-65E0595ECFEB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Asm2DB</RootNamespace>
+    <AssemblyName>Asm2DB</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addaccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addaccount.Designer.cs">
+      <DependentUpon>addaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addbook.Designer.cs">
+      <DependentUpon>addbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addedbook.cs" />
+    <Compile Include="admincurtag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admincurtag.Designer.cs">
+      <DependentUpon>admincurtag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admininterf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admininterf.Designer.cs">
+      <DependentUpon>admininterf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admininterf2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admininterf2.Designer.cs">
+      <DependentUpon>admininterf2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookinfor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookinfor.Designer.cs">
+      <DependentUpon>bookinfor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="currenttag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="currenttag.Designer.cs">
+      <DependentUpon>currenttag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editdeleteacc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editdeleteacc.Designer.cs">
+      <DependentUpon>editdeleteacc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editdeletebook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editdeletebook.Designer.cs">
+      <DependentUpon>editdeletebook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edittopicauthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edittopicauthor.Designer.cs">
+      <DependentUpon>edittopicauthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgotpass1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotpass1.Designer.cs">
+      <DependentUpon>forgotpass1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgotpass2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotpass2.Designer.cs">
+      <DependentUpon>forgotpass2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="guestinterf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="guestinterf.Designer.cs">
+      <DependentUpon>guestinterf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managestaffacc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="managestaffacc.Designer.cs">
+      <DependentUpon>managestaffacc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="register1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register1.Designer.cs">
+      <DependentUpon>register1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentlogin.Designer.cs">
+      <DependentUpon>studentlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login1.Designer.cs">
+      <DependentUpon>Login1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="stafflogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stafflogin.Designer.cs">
+      <DependentUpon>stafflogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tagdated.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tagdated.Designer.cs">
+      <DependentUpon>tagdated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="taginuse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="taginuse.Designer.cs">
+      <DependentUpon>taginuse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userinfor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userinfor.Designer.cs">
+      <DependentUpon>userinfor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usinterf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usinterf.Designer.cs">
+      <DependentUpon>usinterf.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addaccount.resx">
+      <DependentUpon>addaccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addbook.resx">
+      <DependentUpon>addbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admincurtag.resx">
+      <DependentUpon>admincurtag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admininterf.resx">
+      <DependentUpon>admininterf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admininterf2.resx">
+      <DependentUpon>admininterf2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookinfor.resx">
+      <DependentUpon>bookinfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="currenttag.resx">
+      <DependentUpon>currenttag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editdeleteacc.resx">
+      <DependentUpon>editdeleteacc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editdeletebook.resx">
+      <DependentUpon>editdeletebook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edittopicauthor.resx">
+      <DependentUpon>edittopicauthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotpass1.resx">
+      <DependentUpon>forgotpass1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotpass2.resx">
+      <DependentUpon>forgotpass2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="guestinterf.resx">
+      <DependentUpon>guestinterf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login1.resx">
+      <DependentUpon>Login1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managestaffacc.resx">
+      <DependentUpon>managestaffacc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register1.resx">
+      <DependentUpon>register1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stafflogin.resx">
+      <DependentUpon>stafflogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentlogin.resx">
+      <DependentUpon>studentlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tagdated.resx">
+      <DependentUpon>tagdated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="taginuse.resx">
+      <DependentUpon>taginuse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userinfor.resx">
+      <DependentUpon>userinfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usinterf.resx">
+      <DependentUpon>usinterf.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
